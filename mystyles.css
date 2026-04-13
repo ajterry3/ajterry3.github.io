@@ -25,3 +25,29 @@ a { color: #3498db; font-weight: bold; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 img { border-radius: 8px; border: 2px solid #3498db; }
+
+
+/* --- Space Reduction Tweaks --- */
+
+/* 1. Reduce the massive gap at the top and bottom of sections */
+.resume-section {
+    min-height: auto !important; /* This stops sections from forcing full-screen height */
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+/* 2. Tighten the space inside the content blocks */
+#content-block {
+    margin: 20px auto !important; /* Reduced from 40px */
+    padding: 20px !important;     /* Reduced from 30px */
+}
+
+/* 3. Shrink the header area height */
+#top-section {
+    padding: 30px 20px !important; /* Reduced from 60px */
+}
+
+/* 4. Remove extra bottom margins from headings */
+h1, h2, h3, .mb-5 {
+    margin-bottom: 1rem !important; 
+}
