@@ -60,15 +60,11 @@
         var divElement = document.getElementById('viz1776114538436');
         var vizElement = divElement.getElementsByTagName('object')[0];
         
-        // This makes the graph fit the width of your screen perfectly
+        // This keeps your width setting
         vizElement.style.width = '100%';
         
-        // This fixes the height based on your screen size to prevent sliding
-        if (divElement.offsetWidth > 800) {
-            vizElement.style.height = '700px'; 
-        } else {
-            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
-        }
+        // ADJUST HEIGHT HERE: Change '700px' to whatever height you prefer
+        vizElement.style.height = '700px'; 
         
         var scriptElement = document.createElement('script');
         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
