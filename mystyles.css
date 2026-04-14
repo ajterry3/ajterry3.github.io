@@ -94,3 +94,18 @@ section, .section, [class*="section"], .resume-section {
 .mt-5 { margin-top: 1rem !important; }
 .pb-5 { padding-bottom: 1rem !important; }
 .pt-5 { padding-top: 1rem !important; }
+
+/* Container to align images side-by-side */
+.image-row {
+    display: flex;
+    justify-content: center; /* Centers the images on the page */
+    gap: 20px;               /* Adds a gap between the two pictures */
+    flex-wrap: wrap;         /* Allows them to stack on mobile phones */
+}
+
+/* Set a consistent size for both images */
+.hobby-img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;      /* Optional: rounds the corners slightly */
+}
