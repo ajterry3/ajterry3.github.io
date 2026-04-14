@@ -77,3 +77,20 @@ h2.mb-5 {
     margin-bottom: 10px !important;
     padding: 15px !important;
 }
+
+
+/* Nuclear option for all spacing offenders */
+section, .section, [class*="section"], .resume-section {
+    min-height: auto !important;
+    height: auto !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+}
+
+/* Tighten Bootstrap/utility spacing classes */
+.py-5 { padding-top: 1rem !important; padding-bottom: 1rem !important; }
+.my-5 { margin-top: 1rem !important; margin-bottom: 1rem !important; }
+.mb-5 { margin-bottom: 1rem !important; }
+.mt-5 { margin-top: 1rem !important; }
+.pb-5 { padding-bottom: 1rem !important; }
+.pt-5 { padding-top: 1rem !important; }
