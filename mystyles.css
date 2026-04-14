@@ -51,3 +51,29 @@ img { border-radius: 8px; border: 2px solid #3498db; }
 h1, h2, h3, .mb-5 {
     margin-bottom: 1rem !important; 
 }
+
+/* --- Space Reduction Fixes --- */
+
+/* 1. Force sections to shrink to fit their content */
+.resume-section {
+    min-height: auto !important; 
+    padding-top: 2rem !important;  /* Reduced from default 5rem */
+    padding-bottom: 2rem !important;
+}
+
+/* 2. Tighten the gap between the heading and the list/text */
+.resume-section-content {
+    padding-top: 0 !important;
+}
+
+/* 3. Reduce the margin below headings */
+h2.mb-5 {
+    margin-bottom: 1.5rem !important;
+}
+
+/* 4. Reduce spacing in your custom content block */
+#content-block {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    padding: 15px !important;
+}
